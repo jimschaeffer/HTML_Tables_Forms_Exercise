@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+}
+
+table tr {
+    background-color: bisque;
+}
+
+table tr:nth-child(even) {
+    background-color: beige;
+}
+
+table th {
+    background-color: burlywood;
+}
+
+form > * {
+    display: block;
+}

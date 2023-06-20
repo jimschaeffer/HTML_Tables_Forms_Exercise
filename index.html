@@ -3,11 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>HTML Tables and Forms</title>
   </head>
   <body>
     <main>
       <!-- Complete the Exercises HERE -->
+      <table>
+        <caption></caption>
+        <thead>
+          <tr>
+            <th>Drink</th>
+            <th>Total Servings</th>
+            <th>Serving Size</th>
+            <th>Calories</th>
+            <th>Carbs</th>
+            <th>Sugars</th>
+            <th>Sodium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Coca-Cola</td>
+            <td>1</td>
+            <td>12oz</td>
+            <td>140</td>
+            <td>35g</td>
+            <td>39g</td>
+            <td>45mg</td>
+          </tr>
+          <tr>
+            <th>Pepsi</td>
+            <td>1</td>
+            <td>12oz</td>
+            <td>150</td>
+            <td>41g</td>
+            <td>41mg</td>
+            <td>30mg</td>
+          </tr>
+          <tr>
+            <th>Coke Zero</td>
+            <td>1</td>
+            <td>12oz</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0g</td>
+            <td>40mg</td>
+          </tr>
+          <tr>
+            <th>Dr. Pepper</td>
+            <td>1</td>
+            <td>12oz</td>
+            <td>150</td>
+            <td>40g</td>
+            <td>40g</td>
+            <td>55mg</td>
+          </tr>
+          <tr>
+            <th>Mountain Dew</td>
+            <td>1</td>
+            <td>12oz</td>
+            <td>170</td>
+            <td>46g</td>
+            <td>46g</td>
+            <td>60mg</td>
+          </tr>
+        </tbody>
+      </table>
+      <form>
+        <div>
+          <label for="drink-input">Drink:</label>
+          <select name="drink-input" id="drink-input">
+            <option value="" disabled selected>Select Your Drink</option>
+            <option value="Coca-Cola">Coca-Cola</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Coke Zero">Coke Zero</option>
+            <option value="Dr. Pepper">Dr. Pepper</option>
+            <option value="Mountain Dew">Mountain Dew</option>
+          </select>
+        </div>
+        <div>
+          <label for="total-servings-input">Total Servings:</label>
+          <input type="text" name="total-servings-input" id="total-servings-input">
+        </div>
+        <div>
+          <label for="serving-size-input">Serving Size:</label>
+         <input type="text" name="serving-size-input" id="serving-size-input">
+        </div>
+        <div>
+          <label for="calories-input">Carlories:</label>
+          <input type="text" name="calories-input" id="calories-input">
+        </div>
+        <div>
+          <label for="carbs-input">Carbs:</label>
+          <input type="text" name="carbs-input" id="carbs-input">
+        </div>
+        <div>
+          <label for="sugars-input">Sugars:</label>
+          <input type="text" name="sugars-input" id="sugars-input">
+        </div>
+        <div>
+          <label for="sodium-input">Sodium:</label>
+          <input type="text" name="sodium-input" id="sodium-input">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   </body>
 </html>
